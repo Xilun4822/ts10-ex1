@@ -1,0 +1,429 @@
+/* The decoration of navigation bar. */
+ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+/* The decoration of words in the navigation bar. */
+li a {
+	display: block;
+	color: pink;
+	padding: 20px;
+    text-decoration: none;
+}
+
+/* Set the color and background color as hovering on the navigation bar. */
+li a:hover:not(.active) {
+    background-color: pink;
+    color: black;
+}
+
+head {
+	margin: 2rem;
+}
+
+/* The decoration of logo image. */
+.logo {
+	width: 900px;
+	height: 900px;
+}
+
+/* The decoration of the navigation button. */
+.open {
+	position: relative;
+	width: 20%;
+	height: 10%;
+	transition: width 1s, height 1s;
+}
+
+/* Set the transition as hovering on the navigation button. */
+.open:hover {
+    width: 100px;
+	height: 100px;
+}
+
+/* The decoration of "Blackpink fans'" */
+.title {
+	font-family: "Roboto Slab", serif;
+	padding: 0;
+	margin: 0;
+	font-size: 40px;
+}
+
+/* Change the cursor as hovering on the navigation bar. */
+.dropdown__trigger {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+/* Hide the dropdown's content by default */
+.dropdown__content {
+    display: none;
+    padding-top: 0.25rem;
+	padding-right: 2rem;
+	padding-bottom: 0.5rem;
+    position: absolute;
+}
+
+/* Show the content when hover on the container */
+.dropdown:hover .dropdown__content {
+    display: block;
+}
+
+/* Set the grid formatting for desktop. */
+.grid-container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 100px 300px 300px;
+	gap: 50px;
+	padding: 40px;
+}
+
+.item1 {
+	grid-column: 1 / 4;
+	grid-row: 1 / 4;
+}
+
+.item2 {
+	position: relative;
+	right: 140px;
+	top: 95px;
+	grid-column: 4;
+	grid-row: 1 / 3;
+	vertical-align: left;
+	text-align: left;
+}
+
+.item3 {
+	position: relative;
+	right: 210px;
+	bottom: 160px;
+	grid-column: 4;
+	grid-row: 3;
+	vertical-align: left;
+	text-align: left;
+}
+
+.item4 {
+	grid-column: 1 / 3;
+	grid-row: 4;
+	vertical-align: middle;
+	text-align: center;
+	border-right: 4px solid pink;
+}
+
+.item5 {
+	grid-column: 1 / 3;
+	grid-row: 5 ;
+	vertical-align: middle;
+	text-align: center;
+	border-right: 4px solid pink;
+}
+
+.item6 {
+	grid-column: 3 / span 4;
+	grid-row: 4;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.item7 {
+	grid-column: 3;
+	grid-row: 5;
+	text-align: center;
+}
+
+.item8 {
+	grid-column: 4;
+	grid-row: 5;
+	text-align: center;
+}
+
+.item9 {
+	grid-column: 3;
+	grid-row: 6;
+	text-align: center;
+}
+
+.item10 {
+	grid-column: 4;
+	grid-row: 6;
+	text-align: center;
+}
+
+.itemX {
+	color: pink;
+	background-color: black;
+	text-align: center;
+	font-size: 30px;
+	grid-column: 1 / span 4;
+	grid-row: 7;
+}
+.item11 {
+	grid-column: 3 / span 4;
+	grid-row: 8;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+
+.item12 {
+	grid-column: 1 / 3;
+	grid-row: 8;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+
+.item13 {
+	grid-column: 1 / 3;
+	grid-row: 9;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+
+.item14 {
+	grid-column: 3 / span 4;
+	grid-row: 9;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+
+.badge {
+	width: 300px;
+	height: 300px;
+	
+}
+
+.world-tour {
+	width: 400px;
+	height: 600px;
+}
+
+.merchandise {
+	width: 300px;
+	height: 300px;
+}
+
+.shirts {
+	width: 350px;
+	height: 300px;
+}
+
+.hats {
+	width: 350px;
+	height: 300px;
+}
+
+.bags {
+	width: 350px;
+	height: 300px;
+}
+
+.lights {
+	width: 350px;
+	height: 300px;
+}
+
+.album1 {
+	width: 300px;
+	height: 300px;
+}
+
+.album2 {
+	width: 300px;
+	height: 300px;
+}
+
+.album3 {
+	width: 300px;
+	height: 300px;
+}
+
+.album4 {
+	width: 300px;
+	height: 300px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: pink;
+   color: black;
+   text-align: center;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Set the grid formatting for the mobile device. */
+
+@media (max-width: 800px) {
+.flex-container {
+    flex-direction: column;
+  }
+
+.grid-container {
+    grid-template-columns: 400px 300px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 100px 300px 300px 300px 300px;
+	gap: 15px;
+	padding: 15px;
+}
+
+.logo {
+	width: 400px;
+	height: 400px;
+}
+
+.item1 {
+	grid-column: 1;
+	grid-row: 1;
+	right: 50px;
+}
+
+.item2 {
+	position: relative;
+	left: 10px;
+	top: 100px;
+	right: 50px;
+	grid-column: 1 / 2;
+	grid-row: 2;
+}
+
+.open {
+	position: relative;
+	width: 20%;
+	height: 27%;
+	transition: width 1s, height 1s;
+}
+
+li a {
+	display: block;
+	color: pink;
+	padding: 10px;
+    text-decoration: none;
+}
+
+.open:hover {
+    width: 50px;
+	height: 50px;
+}
+
+.title {
+	position: relative;
+	top: 350px;
+	right: 100px;
+	font-family: "Roboto Slab", serif;
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	color: 0000;
+}
+
+.item3 {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.item4 {
+	grid-column: 1 ;
+	grid-row: 3;
+	vertical-align: middle;
+	text-align: center;
+	border-right: none;
+}
+
+.item5 {
+	grid-column: 1;
+	grid-row: 4;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.item6 {
+	grid-column: 1;
+	grid-row: 5;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.item7 {
+	grid-column: 1;
+	grid-row: 6;
+	text-align: center;
+}
+
+.item8 {
+	grid-column: 1;
+	grid-row: 7;
+	text-align: center;
+}
+
+.item9 {
+	grid-column: 1;
+	grid-row: 8;
+	text-align: center;
+}
+
+.item10 {
+	grid-column: 1;
+	grid-row: 9;
+	text-align: center;
+}
+
+.itemX {
+	grid-column: 1;
+	grid-row: 10;
+	font-size: 30px;
+}
+
+.item11 {
+	grid-column: 1;
+	grid-row: 12;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+
+.item12 {
+	grid-column: 1;
+	grid-row: 11;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+
+	
+.item13 {
+	grid-column: 1;
+	grid-row: 13;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+
+.item14 {
+	grid-column: 1;
+	grid-row: 14;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+}
+
+.world-tour {
+	width: 400px;
+	height: 300px;
+}
+
+}
